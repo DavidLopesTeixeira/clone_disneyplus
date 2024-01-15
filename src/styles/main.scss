@@ -2,6 +2,7 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
+@use 'plans';
 
 // Fonts
 
@@ -77,5 +78,25 @@
 
 body {
     background-color: variaveis.$CorDeFundo;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario;
+    background-color: #6421ff;;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all ease .8s;
+    
+
+    &:hover {
+        background-color: rgb(126, 71, 255);
+    }
 }
 
