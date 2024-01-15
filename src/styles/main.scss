@@ -1,6 +1,7 @@
 // Importações
 @use 'variaveis';
 @use 'hero';
+@use 'shows';
 
 // Fonts
 
@@ -71,10 +72,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Avenir, sans-serif;
 }
 
 body {
     background-color: variaveis.$CorDeFundo;
-    font-family: Avenir, sans-serif;
 }
 
