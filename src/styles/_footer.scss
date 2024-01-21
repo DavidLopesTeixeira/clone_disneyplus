@@ -55,7 +55,7 @@
     select {
         background-color: transparent;
         border: none;
-        color: variaveis.$CorTextoPrincipal;
+        color: variaveis.$corTextoPrincipal;
         height: 38px;
 
         &:hover {
@@ -63,7 +63,7 @@
         }
 
         option {
-            color: variaveis.$CorDeFundo;
+            color: variaveis.$corDeFundo;
         }
     }
 }

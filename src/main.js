@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const questions = document.querySelectorAll('[data-faq-question]');
 
     const heroSection = document.querySelector('.hero');
-    const alturaHero = heroSection.clientHeight;
+    const heightHero = heroSection.clientHeight;
 
     window.addEventListener('scroll', function () {
-        const posicaoAtual = window.scrollY;
+        const currentPosition = window.scrollY;
 
-        if (posicaoAtual < alturaHero) {
-            ocultaElementosDoHeader();
+        if (currentPosition < heightHero) {
+            hideElementsHeader();
         } else {
-            exibeElementosDoHeader();
+            showElementsHeader();
         }
     })
 
@@ -43,12 +43,13 @@ function openCloseAnswer(element) {
     parentElement.classList.toggle(classe);
 };
 
-function ocultaElementosDoHeader() {
+function hideElementsHeader() {
     const header = document.querySelector('.header');
     header.classList.add('header--is-hidden');
 };
 
-function exibeElementosDoHeader() {
+
+function showElementsHeader() {
     const header = document.querySelector('.header');
     header.classList.remove('header--is-hidden');
 };

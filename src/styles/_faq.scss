@@ -19,6 +19,7 @@
                 display: block;
                 cursor: pointer;
                 position: relative;
+                text-align: start;
 
                 &::after {
                     content: '+';
@@ -29,6 +30,11 @@
                     display: flex;
                     align-items: center;
                     font-size: 40px;
+
+                    @media (max-width: 768px) {
+                        right: 4px;
+                        font-size: 30px;
+                    }
                 }
             }
 

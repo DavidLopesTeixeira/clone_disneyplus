@@ -174,7 +174,10 @@
         </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        </picture>
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">
                 Baixe filmes e séries
@@ -282,7 +285,7 @@
         </li>
         <li class="faq__questions__item ">
             <div class="faq__questions__item__question" data-faq-question>
-                Já tem o Disney+ ou o Star+ e quer o Combo+?
+                Já tem o Disney+ ou o Star+ <br> e quer o Combo+?
             </div>
             <div class="faq__questions__item__answer text--big">
                 Ao assinar o Combo+:
@@ -328,7 +331,7 @@
         </li>
         <li class="faq__questions__item">
             <div class="faq__questions__item__question" data-faq-question>
-                Como posso ver conteúdo com classificação indicativa até 16 e 18?
+                Como posso ver conteúdo com classificação indicativa <br> de 16 a 18?
             </div>
             <div class="faq__questions__item__answer text--big">
                 Para poder acessar o catálogo completo que inclui conteúdo com classificação indicativa 
@@ -394,6 +397,9 @@
             O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade 
             Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, 
             Brasil e CNPJ/M 73.042.962/0004-20
+        </p>
+        <p class="text-small"">
+            Clone: David L Teixeira
         </p>
         </div>
     </footer>
